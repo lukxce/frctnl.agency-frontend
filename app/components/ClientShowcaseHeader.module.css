@@ -1,0 +1,218 @@
+.root {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.shell {
+  width: 100%;
+  height: 900px;
+}
+
+.outer.outer {
+  width: 100%;
+}
+
+.inner.inner {
+  height: auto;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+  border: 1px solid #e9e9e9;
+}
+
+.card.card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  max-width: 532px;
+  margin: 0;
+  background-color: #f6f6f6;
+  height: 386px;
+  border-radius: 40px;
+}
+
+.coverImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f6f6f6;
+}
+
+.cardBody {
+  padding: 6px 0 20px;
+  background-color: #f6f6f6;
+}
+
+.metaList.metaList {
+  margin: 0 0 20px;
+}
+
+.metaItem.metaItem {
+  max-width: 532px;
+}
+
+.metaLabel.metaLabel {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: #a4a4a4;
+  transition: none;
+}
+
+.metaValue.metaValue {
+  flex: 0 1 auto;
+  max-width: 55%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: #171717;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.iconThumb.iconThumb {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #171717;
+}
+
+.visitWebsiteWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 532px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.visitWebsiteLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #171717;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.visitWebsiteLink:focus-visible {
+  outline: 2px solid #2a29ff;
+  outline-offset: 3px;
+}
+
+.visitWebsiteArrow {
+  display: block;
+  flex-shrink: 0;
+  color: #2a29ff;
+  transition: transform 0.28s ease;
+}
+
+.hole.hole {
+  transform: translate(-50%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .visitWebsiteLink:hover .visitWebsiteArrow {
+    transform: rotate(45deg);
+  }
+}
+
+.visitWebsiteLink:focus-visible .visitWebsiteArrow {
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visitWebsiteArrow {
+    transition: none;
+  }
+
+  .visitWebsiteLink:hover .visitWebsiteArrow,
+  .visitWebsiteLink:focus-visible .visitWebsiteArrow {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .root {
+    width: 100%;
+    margin: 0 auto 2rem;
+  }
+
+  .shell {
+    height: auto;
+    width: 100%;
+  }
+
+  .outer.outer {
+    height: auto;
+    animation: none;
+  }
+
+  .inner.inner {
+    width: 100%;
+    max-width: 100%;
+    margin: -18px auto 2rem;
+    padding: 32px 6px 0;
+    border-radius: 46px;
+  }
+
+  .card.card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cover {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+    margin: 0 auto;
+  }
+
+  .cardBody {
+    padding: 6px 0 14px;
+  }
+
+  .metaItem.metaItem {
+    max-width: 100%;
+  }
+
+  .metaLabel.metaLabel {
+    font-size: 13px;
+  }
+
+  .metaValue.metaValue {
+    font-size: 14px;
+  }
+
+  .rowLink {
+    min-height: 66px;
+    max-height: 66px;
+  }
+
+  .visitWebsiteLink {
+    font-size: 13px;
+  }
+
+  .hole.hole {
+    transform: translate(-50%);
+  }
+
+  .metaList.metaList {
+    margin: 0 0 14px;
+  }
+}

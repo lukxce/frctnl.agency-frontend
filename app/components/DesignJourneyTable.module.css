@@ -1,0 +1,322 @@
+.root {
+  width: 100%;
+  max-width: 550px;
+  align-self: stretch;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 18px 0;
+  border-top: 1px solid #e3e3e3;
+  max-width: 450px;
+  margin: auto;
+}
+
+.ctaButton {
+  margin-left: 50px;
+}
+
+.colLeft {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -4%;
+  color: #171717;
+  flex: 1;
+}
+
+.colMid,
+.colRight {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(23, 23, 23, 0.8);
+  text-align: right;
+}
+
+.colMid {
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -4%;
+  font-weight: 600;
+  flex: 1;
+}
+
+.colRight {
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -4%;
+  font-weight: 600;
+  color: #747474;
+  flex: 0.7;
+}
+
+.statsWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.statsGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.statsCard {
+  box-sizing: border-box;
+  width: 550px;
+  max-width: 100%;
+  height: 183px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.statsLeft {
+  display: flex;
+  align-items: flex-start;
+}
+
+.statsNumber {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -10px;
+  color: #171717;
+  font-variant-numeric: tabular-nums;
+}
+
+.statsPlus {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 0;
+  vertical-align: super;
+  margin-left: 0.06em;
+  color: #2a29ff;
+}
+
+.statsRight {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 230px;
+  bottom: 60px;
+}
+
+.statsText1 {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #23232399;
+  letter-spacing: -4%;
+}
+
+.statsText2 {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #232323;
+  letter-spacing: -4%;
+}
+
+@media (max-width: 700px) {
+  .colMid,
+  .colRight {
+    text-align: left;
+  }
+
+  .statsNumber {
+    font-size: 44px;
+  }
+}
+
+.twinRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 4px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.twinLeft {
+  position: relative;
+  width: 273px;
+  height: 273px;
+  border-radius: 36px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #e9e9e9;
+}
+
+.twinLeftImg {
+  object-fit: cover;
+}
+
+.twinCheck {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+}
+
+.twinRight {
+  box-sizing: border-box;
+  display: flex;
+  width: 273px;
+  height: 273px;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 40px;
+  border-radius: 36px;
+  background: #2a29ff;
+}
+
+.twinRightTop {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+  min-height: 0;
+}
+
+.twinDots {
+  display: block;
+  width: 95%;
+  max-width: 100%;
+  height: auto;
+}
+
+.pctBlock {
+  margin: 0;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  line-height: 1;
+}
+
+.pctValue {
+  font-size: 65px;
+  font-weight: 600;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -6px;
+}
+
+.pctSymbol {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.twinRightBottom {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: -4%;
+}
+
+.twinP1 {
+  margin: 0;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #ffffff99;
+}
+
+.twinP2 {
+  margin: 0;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .root {
+    margin-bottom: 60px;
+  }
+
+  .twinRow {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .statsCard {
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  .statsRight {
+    position: unset;
+    margin-left: 15px;
+  }
+
+  .twinLeft {
+    width: 49%;
+    height: 200px;
+  }
+
+  .twinRight {
+    width: 49%;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .twinDots {
+    display: none;
+  }
+
+  .colLeft {
+    font-size: 14px;
+    flex: 0.8;
+  }
+
+  .colMid {
+    font-size: 13px;
+    flex: 0.8;
+    text-align: right;
+  }
+
+  .colRight {
+    font-size: 13px;
+    flex: 0.7;
+    text-align: right;
+  }
+
+  .ctaButton {
+    margin-left: 0;
+  }
+
+  .row {
+    padding: 10px 0px;
+    max-width: calc(100% - 48px);
+  }
+}
