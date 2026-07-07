@@ -199,8 +199,10 @@ export default function PhoneInHand() {
                       unoptimized
                     />
                     <div>
-                      <p className={styles.posterName}>Digitl</p>
-                      <p className={styles.posterRole}>Marketing Agency</p>
+                      <p className={styles.posterName}>Fractional</p>
+                      <p className={styles.posterRole}>
+                        Performance marketing for startups
+                      </p>
                     </div>
                   </div>
                 </header>

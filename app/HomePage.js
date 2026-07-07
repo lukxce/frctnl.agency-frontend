@@ -8,7 +8,6 @@ import HeroCard from "./components/HeroCard";
 import JournalList from "./components/JournalList";
 import LinkCard from "./components/LinkCard";
 import MotionTitleBlock from "./components/MotionTitleBlock";
-import PhoneInHand from "./components/PhoneInHand";
 import ScrollReveal from "./components/ScrollReveal";
 import ServiceItem from "./components/ServiceItem";
 import StepProcess from "./components/StepProcess";
@@ -24,38 +23,38 @@ import styles from "./page.module.css";
 
 const services = [
   {
-    key: "paid-advertising",
-    title: "Paid Advertising (Search & Social)",
+    key: "paid-media",
+    title: "Paid Media",
     description:
-      "We plan, run, and manage paid campaigns across search and social platforms, focusing on efficient spend, clear messaging, and consistent lead or sales generation.",
+      "We plan, launch, and scale paid media across search and paid social. Campaigns are structured for clarity, tracked properly, and optimized continuously. No channel chasing, no random tests, just focused execution designed to compound over time.",
     Icon: IconProduct,
   },
   {
-    key: "web-design",
-    title: "Website Design & Development",
+    key: "conversion-funnel-optimization",
+    title: "Conversion & Funnel Optimization",
     description:
-      "We design and build clear, professional websites that explain what you do, build trust, and make it easy for visitors to take the next step.",
+      "Paid traffic only works when the funnel works. We audit and improve every step, from ad click to conversion. Messaging, layouts, forms, and flows are optimized to reduce friction, improve conversion rates, and lower acquisition costs.",
     Icon: IconWeb,
   },
   {
-    key: "seo",
-    title: "Search Engine Optimization (SEO)",
+    key: "marketing-strategy-direction",
+    title: "Marketing Strategy & Direction",
     description:
-      "We improve your search presence by fixing technical issues, improving site structure, and optimizing content so your business appears more often in relevant searches.",
+      "We help teams decide what to focus on, and what not to. From channel strategy to budget allocation and testing roadmaps, we bring structure to marketing decisions so execution is aligned with business goals.",
     Icon: IconStrategy,
   },
   {
-    key: "social",
-    title: "Social Content & Presence",
+    key: "team-setup-enablement",
+    title: "Team Setup & Enablement",
     description:
-      "We help shape your social presence with clear messaging and consistent visuals, ensuring your brand looks professional and aligned across platforms.",
+      "As an extended team, we help hire, onboard, and enable internal marketers when it’s time to scale. That includes processes, playbooks, and hands-on support so paid media doesn’t break as the company grows.",
     Icon: IconMotion,
   },
   {
-    key: "branding",
-    title: "Branding & Visual Identity",
+    key: "advisory-consulting",
+    title: "Advisory & Consulting",
     description:
-      "We design brand identities, including logos and brand guidelines, that establish consistency, clarity, and credibility across digital platforms, advertising, and marketing assets.",
+      "For teams that need direction, validation, or a reset. We review accounts, funnels, and strategy, help unblock decisions, and give clear next steps. Best suited for founders or teams that need experienced perspective, not another agency.",
     Icon: IconBrand,
   },
 ];
@@ -66,16 +65,19 @@ export default function HomePage({ articles = [], showcases = [] }) {
       <main className={styles.main} data-article-count={articles.length}>
         <HeroCard
           primaryCtaHref="/contact"
-          secondaryCtaHref="/#what-we-do"
-          headlineLines={["Where marketing meets real business results."]}
+          secondaryCtaHref="/#how-we-work"
+          headlineLines={[
+            "Paid media for startups that need results, not noise.",
+          ]}
         />
         <ScrollReveal>
-          <ClientsLogosCarousel title="Trusted by:" />
+          <ClientsLogosCarousel title="Worked with teams at" />
         </ScrollReveal>
 
         <MotionTitleBlock
-          title="Work that speaks for itself"
-          subtitle="From strategy to execution, <br> here's what that looks like in practice."
+          title="Results"
+          subtitle="Performance over promises. Here’s a snapshot of work we’ve done."
+          subtitleWidth={270}
           subtitleWidthMobile={200}
           className={styles.titleContainer}
           marginTop={10}
@@ -99,9 +101,9 @@ export default function HomePage({ articles = [], showcases = [] }) {
         <div id="what-we-do" style={{ scrollMarginTop: "20px" }}>
           <MotionTitleBlock
             title="What we do"
-            subtitle="The core marketing services we handle for our clients."
+            subtitle="We take ownership of paid growth, from strategy to execution."
             className={styles.titleContainer}
-            subtitleWidth={220}
+            subtitleWidth={260}
             widthMobile={200}
           />
 
@@ -119,9 +121,11 @@ export default function HomePage({ articles = [], showcases = [] }) {
           </div>
         </div>
 
-        <ScrollReveal>
-          <StepProcess />
-        </ScrollReveal>
+        <div id="how-we-work" style={{ scrollMarginTop: "20px" }}>
+          <ScrollReveal>
+            <StepProcess />
+          </ScrollReveal>
+        </div>
 
         {/* <MotionTitleBlock
           title="My toolkit, your advantage"
@@ -148,7 +152,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
           <DesignJourneyTable />
         </ScrollReveal> */}
 
-        <MotionTitleBlock
+        {/* <MotionTitleBlock
           title="Trusted by our clients"
           subtitle="<b>What clients say</b> <br> about working with us."
           hasImage={true}
@@ -156,7 +160,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
           className={styles.titleContainer}
         />
 
-        <PhoneInHand />
+        <PhoneInHand /> */}
 
         {/* <MotionTitleBlock
           title="Flexible plans for every need"
@@ -182,8 +186,8 @@ export default function HomePage({ articles = [], showcases = [] }) {
 
         <MotionTitleBlock
           width={500}
-          title="The Digitl Journal"
-          subtitle="Practical thoughts on marketing, growth, and building brands that stand out."
+          title="Journal"
+          subtitle="Thoughts on paid media, growth, and what we’re learning along the way."
           subtitleWidth={310}
           subtitleWidthMobile={300}
           marginTop={80}
@@ -200,8 +204,8 @@ export default function HomePage({ articles = [], showcases = [] }) {
         />
 
         <MotionTitleBlock
-          title="Join 150+ professionals elevating their brand"
-          subtitle="Discover design insights, project updates, and tips to elevate your work straight to your inbox."
+          title="Insights from inside growing startups"
+          subtitle="Notes, experiments, and lessons from teams actually running paid media and growth."
           width={600}
           subtitleWidth={425}
           subtitleWidthMobile={350}

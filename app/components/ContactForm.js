@@ -11,6 +11,7 @@ export const MESSAGE_MAX_LENGTH = 4000;
  * @param {{ onSubmit?: (data: { email: string; text: string }) => void }} props
  */
 export default function ContactForm({ onSubmit }) {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   // Honeypot: real users never see or fill this field, bots do.
@@ -21,6 +22,7 @@ export default function ContactForm({ onSubmit }) {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    const trimmedName = name.trim();
     const trimmedEmail = email.trim();
     const trimmedMessage = message.trim();
     if (!trimmedEmail || !trimmedMessage) return;
@@ -35,6 +37,7 @@ export default function ContactForm({ onSubmit }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           data: {
+            name: trimmedName,
             email: trimmedEmail,
             text: trimmedMessage,
             company,
@@ -46,11 +49,12 @@ export default function ContactForm({ onSubmit }) {
         throw new Error("Message request failed");
       }
 
+      setName("");
       setEmail("");
       setMessage("");
       setSuccess(true);
       if (typeof onSubmit === "function") {
-        onSubmit({ email: trimmedEmail, text: trimmedMessage });
+        onSubmit({ name: trimmedName, email: trimmedEmail, text: trimmedMessage });
       }
     } catch {
       setError("Unable to send your message right now. Please try again.");
@@ -68,15 +72,25 @@ export default function ContactForm({ onSubmit }) {
       <div className={styles.inner}>
         <header className={styles.header}>
           <h2 id="contact-form-title" className={styles.title}>
-            Contact
+            Tell us a bit about your business.
           </h2>
           <p className={styles.subtitle}>
-            Fill out the form or reach out directly. We typically respond within
-            one business day.
+            If it feels like a good fit, we’ll follow up to explore working
+            together.
           </p>
         </header>
 
         <form className={styles.form} onSubmit={handleSubmit} noValidate>
+          <input
+            type="text"
+            name="name"
+            autoComplete="name"
+            placeholder="Name"
+            className={styles.field}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            aria-label="Name"
+          />
           <input
             type="email"
             name="email"
@@ -119,7 +133,7 @@ export default function ContactForm({ onSubmit }) {
             className={styles.submit}
             disabled={isSubmitting}
           >
-            Send message
+            Start the conversation
           </button>
         </form>
 
@@ -127,15 +141,15 @@ export default function ContactForm({ onSubmit }) {
         {success ? <p className={styles.statusSuccess}>Message sent.</p> : null}
 
         <footer className={styles.footer}>
-          <p className={styles.chatLabel}>Prefer phone or email?</p>
+          <p className={styles.chatLabel}>Not a fan of forms?</p>
           <p className={styles.phone}>
             <a className={styles.phoneLink} href="tel:+38641962522">
               (+386) 41 962 522
             </a>
           </p>
           <p className={styles.email}>
-            <a className={styles.emailLink} href="mailto:hello@digitl.me">
-              hello@digitl.me
+            <a className={styles.emailLink} href="mailto:hello@frctnl.agency">
+              hello@frctnl.agency
             </a>
           </p>
           <p className={styles.copyright}>

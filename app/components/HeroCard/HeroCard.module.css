@@ -93,7 +93,7 @@
 }
 
 .headline {
-  margin: 0 0 20px;
+  margin: 0 0 44px;
   font-size: 70px;
   font-weight: 600;
   line-height: 90%;
@@ -129,8 +129,8 @@
 
 .description {
   margin: 0;
-  max-width: 280px;
-  font-size: 16px;
+  max-width: 330px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 140%;
   letter-spacing: -4%;

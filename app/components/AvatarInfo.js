@@ -15,10 +15,10 @@ import { defaultSocialLinks } from "./socialIcons";
  * }} props
  */
 export default function AvatarInfo({
-  name = "Digitl",
-  role = "Full-service marketing for businesses",
+  name = "Fractional",
+  role = "Performance marketing for startups",
   imageSrc = digitlLogo,
-  imageAlt = "Digitl logo",
+  imageAlt = "Fractional logo",
   socialLinks = defaultSocialLinks,
   className = "",
 }) {

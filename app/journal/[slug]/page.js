@@ -136,8 +136,8 @@ export default async function JournalArticlePage(props) {
         : null}
 
       <MotionTitleBlock
-        title="Join 150+ professionals elevating their brand"
-        subtitle="Discover design insights, project updates, and tips to elevate your work straight to your inbox."
+        title="Insights from inside growing startups"
+        subtitle="Notes, experiments, and lessons from teams actually running paid media and growth."
         className={innerStyles.titleContainer}
         width={600}
         subtitleWidth={425}
