@@ -38,29 +38,29 @@ const faqItemVariants = {
 
 const FAQS = [
   {
-    question: "What types of businesses do you work with?",
+    question: "What kind of brands do you work with?",
     answer:
-      "We work with a wide range of businesses, from local companies to established brands, across industries where clear marketing and results matter.",
+      "We work primarily with startups and growth-stage companies that already have traction and want to scale paid acquisition responsibly. We’re selective by design and partner with a limited number of teams at a time.",
   },
   {
-    question: "How long does it take to start working together?",
+    question: "Do you only do paid ads?",
     answer:
-      "Most projects start within one to two weeks after an initial conversation, depending on scope, priorities, and availability.",
+      "Paid media is the core of what we do, but we don’t treat it in isolation. We also work on conversion design, funnel optimization, and overall acquisition strategy to make sure paid traffic actually converts and compounds.",
   },
   {
-    question: "Do you work on ongoing marketing or one-time projects?",
+    question: "How fast can we launch?",
     answer:
-      "Both. Some clients need ongoing support, while others hire us for specific projects like a website, campaign, or brand refresh.",
+      "Most teams can launch within 2–4 weeks, depending on readiness, assets, and tracking. We move quickly, but we won’t rush fundamentals that affect long-term performance.",
   },
   {
-    question: "Do you offer contracts or long-term commitments?",
+    question: "Is there a contract?",
     answer:
-      "We don’t lock clients into long contracts. Work is scoped clearly upfront, and ongoing collaborations are based on mutual fit and results.",
+      "Yes. We typically work on a monthly retainer with a minimum commitment. This allows us to operate like an extended in-house team and focus on meaningful, sustained results.",
   },
   {
-    question: "What services do you offer?",
+    question: "Do you work with everyone?",
     answer:
-      "We provide paid advertising, SEO, website design and development, branding, and marketing strategy. We focus on practical work that supports real business needs.",
+      "No. We intentionally limit the number of partners we work with. If we don’t believe we can create real impact, we’ll say so upfront.",
   },
 ];
 
@@ -208,7 +208,15 @@ export default function Faq() {
   return (
     <section className={styles.root} aria-labelledby="faq-title">
       <ScrollReveal className={styles.titleContainer}>
-        <Title title="FAQ" />
+        <Title
+          title={
+            <>
+              Got questions?
+              <br />
+              We’ve got answers.
+            </>
+          }
+        />
       </ScrollReveal>
       {reduceMotion
         ? <ul className={styles.list}>{listContent}</ul>
@@ -223,9 +231,9 @@ export default function Faq() {
           </motion.ul>}
       <ScrollReveal delay={0.24}>
         <div className={styles.rootInner}>
-          <p className={styles.followUpText}>Have more questions?</p>
+          <p className={styles.followUpText}>Still have questions?</p>
           <Link href="/#contact" className={styles.askLink}>
-            <span>We’re happy to help</span>
+            <span>Ask us directly</span>
             <AskArrowIcon className={styles.askArrow} />
           </Link>
         </div>

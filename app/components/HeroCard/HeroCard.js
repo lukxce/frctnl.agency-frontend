@@ -36,21 +36,21 @@ import digitlLogo from "../../assets/digitl-logo.png";
 
 /** Full-viewport portfolio hero with floating `stripe.svg` tab and soft card. */
 export default function HeroCard({
-  name = "Digitl",
-  subtitle = "Full-service marketing for businesses",
-  headlineLines = ["Design that moves", "products forward"],
-  description = "We build brands that stand out, convert harder, and scale faster.",
-  socialProofLabel = "Helping 50+ companies grow",
+  name = "Fractional",
+  subtitle = "Performance marketing for startups",
+  headlineLines = ["Paid media for startups that need results, not noise."],
+  description = "We don’t just \"run ads\" — we build brands that convert harder and scale faster.",
+  socialProofLabel = "Trusted by 50+ startup teams",
   progressActiveCount = 2,
   avatarSrc = digitlLogo,
-  avatarAlt = "Digitl logo",
-  availabilitySlotsLabel = "2 open slots",
-  availabilityPeriodLabel = "for June",
+  avatarAlt = "Fractional logo",
+  availabilitySlotsLabel = "2 partner slots",
+  availabilityPeriodLabel = "for 2026",
   location = "London",
   primaryCtaHref = "/contact",
-  primaryCtaLabel = "Get started",
-  secondaryCtaHref = "/projects",
-  secondaryCtaLabel = "What we do",
+  primaryCtaLabel = "Request a slot",
+  secondaryCtaHref = "/#how-we-work",
+  secondaryCtaLabel = "How we work",
   socialLinks,
   className = "",
 }) {
@@ -141,7 +141,7 @@ export default function HeroCard({
               <p className={styles.metaText}>
                 Based in{" "}
                 <span className={styles.metaTextStrong}>{location}</span>,
-                working with businesses worldwide.
+                working with startups worldwide.
               </p>
             </div>
             <Link href="/#faq" className={styles.metaLink}>

@@ -20,7 +20,7 @@ export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: "%s · Digitl",
+    template: "%s · Fractional",
   },
   description: SITE_DESCRIPTION,
   alternates: {

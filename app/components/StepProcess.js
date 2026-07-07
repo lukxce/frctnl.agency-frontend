@@ -92,14 +92,9 @@ export default function StepProcess() {
         <div className={styles.mainStepText}>
           <h3 className={styles.mainStepTitle}>How we work</h3>
           <p className={styles.mainStepDescription}>
-            <span className={styles.mainStepDescriptionBold}>
-              A proven process
-            </span>{" "}
-            designed to keep things clear, efficient, and focused from{" "}
-            <span className={styles.mainStepDescriptionBold}>
-              start to finish
-            </span>
-            .
+            We <span className={styles.mainStepDescriptionBold}>embed</span>{" "}
+            into your business and run paid growth as a single{" "}
+            <span className={styles.mainStepDescriptionBold}>system</span>.
           </p>
         </div>
 

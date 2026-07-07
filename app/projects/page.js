@@ -21,10 +21,10 @@ export default async function ProjectsPage() {
   return (
     <main className={styles.page}>
       <MotionTitleBlock
-        title="Our work"
-        subtitle="A selection of projects we've built for clients across different industries."
+        title="Results"
+        subtitle="Performance over promises. Here’s a snapshot of work we’ve done."
         className={styles.titleContainer}
-        width={300}
+        subtitleWidth={270}
         subtitleWidthMobile={200}
         as="h1"
       />
@@ -43,8 +43,8 @@ export default async function ProjectsPage() {
         ))}
       </div>
       <MotionTitleBlock
-        title="Join 150+ professionals elevating their brand"
-        subtitle="Discover design insights, project updates, and tips to elevate your work straight to your inbox."
+        title="Insights from inside growing startups"
+        subtitle="Notes, experiments, and lessons from teams actually running paid media and growth."
         className={styles.titleContainer}
         width={600}
         subtitleWidth={425}

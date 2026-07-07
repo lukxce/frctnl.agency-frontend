@@ -20,11 +20,11 @@ export default async function JournalPage() {
   return (
     <main className={`${styles.page}`.trim()}>
       <MotionTitleBlock
-        title="The Digitl Journal"
-        subtitle="Articles on marketing, growth, and building brands that stand out."
+        title="Journal"
+        subtitle="Thoughts on paid media, growth, and what we’re learning along the way."
         className={styles.titleContainer}
         width={500}
-        subtitleWidth={300}
+        subtitleWidth={310}
         subtitleWidthMobile={280}
         as="h1"
       />
@@ -42,8 +42,8 @@ export default async function JournalPage() {
       )}
 
       <MotionTitleBlock
-        title="Join 150+ professionals elevating their brand"
-        subtitle="Discover design insights, project updates, and tips to elevate your work straight to your inbox."
+        title="Insights from inside growing startups"
+        subtitle="Notes, experiments, and lessons from teams actually running paid media and growth."
         className={styles.titleContainer}
         width={600}
         subtitleWidth={425}
