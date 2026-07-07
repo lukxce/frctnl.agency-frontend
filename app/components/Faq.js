@@ -216,6 +216,7 @@ export default function Faq() {
               We’ve got answers.
             </>
           }
+          width={480}
         />
       </ScrollReveal>
       {reduceMotion
