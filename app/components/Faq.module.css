@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px 22px 16px 28px;
+  padding: 19px 19px 19px 30px;
   border: none;
   background: none;
   cursor: pointer;
@@ -97,7 +97,7 @@
 }
 
 .panelInner {
-  padding: 0 28px 22px;
+  padding: 0 30px 32px;
 }
 
 .answer {
