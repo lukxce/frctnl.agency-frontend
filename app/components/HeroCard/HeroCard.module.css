@@ -207,7 +207,7 @@
   display: block;
   flex-shrink: 0;
   transition: transform 0.28s ease;
-  color: #1c1cff;
+  color: #2a29ff;
   opacity: 1;
 }
 
@@ -230,7 +230,7 @@
 .location {
   margin: 0;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(23, 23, 23, 0.6);
 }
 

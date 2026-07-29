@@ -217,7 +217,6 @@ a.secondary {
 .journeyTitleTitle {
   font-family: var(--font-manrope);
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 22px;
   line-height: 140%;
   letter-spacing: -0.88px;
