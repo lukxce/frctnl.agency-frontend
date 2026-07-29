@@ -7,7 +7,7 @@
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 46px;
   background: #f6f6f6;
-  color: #111827;
+  color: #171717;
   font-family: var(--font-manrope), system-ui, sans-serif;
   margin-top: 26px;
 }
@@ -60,7 +60,7 @@
   line-height: 1;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: #374151;
+  color: rgba(23, 23, 23, 0.6);
 }
 
 .dots {
@@ -92,7 +92,7 @@
 .doneLabel {
   font-size: 14px;
   font-weight: 500;
-  color: #6b7280;
+  color: rgba(23, 23, 23, 0.6);
   letter-spacing: 0.01em;
 }
 
@@ -102,7 +102,7 @@
   gap: 6px;
   font-size: 14px;
   font-weight: 600;
-  color: #4b5563;
+  color: rgba(23, 23, 23, 0.6);
   line-height: 1.2;
   flex-direction: row-reverse;
 }
@@ -110,7 +110,7 @@
 .clock {
   display: block;
   flex-shrink: 0;
-  color: #6b7280;
+  color: rgba(23, 23, 23, 0.6);
 }
 
 /* —— Title + price —— */
@@ -128,7 +128,7 @@
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.03em;
-  color: #111827;
+  color: #171717;
 }
 
 .priceWrap {
@@ -143,13 +143,13 @@
   font-size: 28px;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: #111827;
+  color: #171717;
 }
 
 .priceSuffix {
   font-size: 14px;
   font-weight: 500;
-  color: #6b7280;
+  color: rgba(23, 23, 23, 0.6);
 }
 
 .subtitleText {
@@ -157,7 +157,7 @@
   font-size: 17px;
   font-weight: 500;
   line-height: 1.45;
-  color: #6b7280;
+  color: rgba(23, 23, 23, 0.6);
   margin-top: 20px;
 }
 
@@ -172,7 +172,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: -5%;
+  letter-spacing: -0.7px;
   margin-bottom: 24px;
   color: #171717;
 }
@@ -202,13 +202,12 @@
   flex: 1;
   min-width: 0;
   margin: 0;
-  color: #4b5563;
+  color: rgba(23, 23, 23, 0.6);
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: -4%;
-  color: #171717;
-  opacity: 0.5;
+  letter-spacing: -0.64px;
+  color: rgba(23, 23, 23, 0.6);
 }
 
 .cardContent {

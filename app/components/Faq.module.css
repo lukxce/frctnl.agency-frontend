@@ -68,7 +68,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: -4%;
+  letter-spacing: -0.64px;
   color: #171717;
   font-family: var(--font-manrope);
 }
@@ -105,9 +105,8 @@
   font-size: 17px;
   font-weight: 600;
   line-height: 130%;
-  color: #171717;
-  opacity: 0.5;
-  letter-spacing: -4%;
+  color: rgba(23, 23, 23, 0.6);
+  letter-spacing: -0.34px;
 }
 
 .followUpText {
@@ -118,9 +117,9 @@
   font-size: 13px;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.52px;
   text-align: center;
-  color: #17171780;
+  color: rgba(23, 23, 23, 0.6);
 }
 
 .askLink {

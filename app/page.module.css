@@ -220,7 +220,7 @@ a.secondary {
   font-style: SemiBold;
   font-size: 22px;
   line-height: 140%;
-  letter-spacing: -4%;
+  letter-spacing: -0.88px;
   text-align: left;
   width: 100%;
 }
@@ -230,8 +230,8 @@ a.secondary {
   font-weight: 600;
   font-size: 17px;
   line-height: 140%;
-  letter-spacing: -4%;
-  color: #747474;
+  letter-spacing: -0.68px;
+  color: rgba(23, 23, 23, 0.6);
   text-align: left;
 }
 

@@ -29,27 +29,27 @@
   font-size: 141px;
   font-weight: 600;
   line-height: 1.2;
-  color: #111827;
+  color: #171717;
   margin-bottom: 20px;
-  letter-spacing: -5%;
+  letter-spacing: -7.05px;
 }
 
 .description {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
-  color: #111827;
+  color: #171717;
   margin-bottom: 10px;
-  letter-spacing: -5%;
+  letter-spacing: -1.2px;
 }
 
 .subDescription {
   font-size: 17px;
   font-weight: 600;
   line-height: 1.5;
-  color: #6b7280;
+  color: rgba(23, 23, 23, 0.6);
   margin-bottom: 70px;
-  letter-spacing: -5%;
+  letter-spacing: -0.85px;
 }
 
 .profile {
@@ -86,16 +86,16 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: #111827;
+  color: #171717;
 }
 
 .role {
   margin: 0 0 12px;
   font-family: var(--font-manrope), system-ui, sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.35;
-  color: #6b7280;
+  color: rgba(23, 23, 23, 0.6);
 }
 
 .socialRow {
@@ -106,7 +106,7 @@
 
 .socialLink {
   display: flex;
-  color: #374151;
+  color: #171717;
   opacity: 0.45;
   transition:
     opacity 0.2s ease,

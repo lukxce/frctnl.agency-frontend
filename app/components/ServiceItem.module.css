@@ -55,7 +55,7 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -4%;
+  letter-spacing: -0.88px;
   text-align: left;
   color: #171717;
 }
@@ -84,8 +84,8 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 130%;
-  color: #747474;
-  letter-spacing: -4%;
+  color: rgba(23, 23, 23, 0.6);
+  letter-spacing: -0.64px;
 }
 
 @media (max-width: 640px) {

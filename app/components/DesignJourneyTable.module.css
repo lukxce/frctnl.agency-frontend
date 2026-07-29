@@ -27,7 +27,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: -4%;
+  letter-spacing: -0.64px;
   color: #171717;
   flex: 1;
 }
@@ -45,7 +45,7 @@
 .colMid {
   font-size: 14px;
   line-height: 120%;
-  letter-spacing: -4%;
+  letter-spacing: -0.56px;
   font-weight: 600;
   flex: 1;
 }
@@ -53,9 +53,9 @@
 .colRight {
   font-size: 14px;
   line-height: 120%;
-  letter-spacing: -4%;
+  letter-spacing: -0.56px;
   font-weight: 600;
-  color: #747474;
+  color: rgba(23, 23, 23, 0.6);
   flex: 0.7;
 }
 
@@ -126,8 +126,8 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
-  color: #23232399;
-  letter-spacing: -4%;
+  color: rgba(23, 23, 23, 0.6);
+  letter-spacing: -0.56px;
 }
 
 .statsText2 {
@@ -135,8 +135,8 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 1.4;
-  color: #232323;
-  letter-spacing: -4%;
+  color: #171717;
+  letter-spacing: -0.56px;
 }
 
 @media (max-width: 700px) {
@@ -238,7 +238,7 @@
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  letter-spacing: -4%;
+  letter-spacing: -0.56px;
 }
 
 .twinP1 {

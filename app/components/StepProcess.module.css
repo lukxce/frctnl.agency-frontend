@@ -46,7 +46,7 @@
   font-weight: 600;
   color: #fff;
   font-family: var(--font-manrope);
-  letter-spacing: -4%;
+  letter-spacing: -0.88px;
   line-height: 120%;
 }
 
@@ -55,7 +55,7 @@
   font-weight: 600;
   color: #ffffff99;
   font-family: var(--font-manrope);
-  letter-spacing: -4%;
+  letter-spacing: -0.56px;
   line-height: 120%;
 }
 
@@ -76,18 +76,18 @@
 .title {
   font-size: 22px;
   font-weight: 600;
-  color: #000;
+  color: #171717;
   font-family: var(--font-manrope);
+  letter-spacing: -0.88px;
   flex: 1;
 }
 
 .description {
   font-size: 16px;
   font-weight: 600;
-  color: #17171780;
-  opacity: 0.5;
+  color: rgba(23, 23, 23, 0.6);
   line-height: 130%;
-  letter-spacing: -4%;
+  letter-spacing: -0.64px;
   font-family: var(--font-manrope);
   flex: 1;
 }
@@ -136,7 +136,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -5%;
+  letter-spacing: -0.56px;
   color: #171717;
   text-decoration: none;
 }
