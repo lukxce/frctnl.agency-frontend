@@ -23,38 +23,38 @@ import styles from "./page.module.css";
 
 const services = [
   {
+    key: "growth-strategy-gtm",
+    title: "Growth Strategy & GTM Direction",
+    description:
+      "The seat itself. We make the calls on positioning, priorities, and where growth comes from.",
+    Icon: IconStrategy,
+  },
+  {
     key: "paid-media",
     title: "Paid Media",
     description:
-      "We plan, launch, and scale paid media across search and paid social. Campaigns are structured for clarity, tracked properly, and optimized continuously. No channel chasing, no random tests, just focused execution designed to compound over time.",
+      "Our sharpest tool. We launch and scale paid search and social, structured around revenue.",
     Icon: IconProduct,
   },
   {
     key: "conversion-funnel-optimization",
     title: "Conversion & Funnel Optimization",
     description:
-      "Paid traffic only works when the funnel works. We audit and improve every step, from ad click to conversion. Messaging, layouts, forms, and flows are optimized to reduce friction, improve conversion rates, and lower acquisition costs.",
+      "We own the path from first touch to customer, so more demand turns into revenue.",
     Icon: IconWeb,
   },
   {
-    key: "marketing-strategy-direction",
-    title: "Marketing Strategy & Direction",
+    key: "systems-enablement",
+    title: "Systems & Enablement",
     description:
-      "We help teams decide what to focus on, and what not to. From channel strategy to budget allocation and testing roadmaps, we bring structure to marketing decisions so execution is aligned with business goals.",
-    Icon: IconStrategy,
-  },
-  {
-    key: "team-setup-enablement",
-    title: "Team Setup & Enablement",
-    description:
-      "As an extended team, we help hire, onboard, and enable internal marketers when it’s time to scale. That includes processes, playbooks, and hands-on support so paid media doesn’t break as the company grows.",
+      "We build the growth machine so it keeps running, with us or your first in-house hire.",
     Icon: IconMotion,
   },
   {
     key: "advisory-consulting",
     title: "Advisory & Consulting",
     description:
-      "For teams that need direction, validation, or a reset. We review accounts, funnels, and strategy, help unblock decisions, and give clear next steps. Best suited for founders or teams that need experienced perspective, not another agency.",
+      "The lighter version. Operator-level direction and audits when you don’t need the full seat.",
     Icon: IconBrand,
   },
 ];
@@ -75,8 +75,8 @@ export default function HomePage({ articles = [], showcases = [] }) {
         </ScrollReveal>
 
         <MotionTitleBlock
-          title="Results"
-          subtitle="Performance over promises. Here’s a snapshot of work we’ve done."
+          title="Numbers, not promises"
+          subtitle="A snapshot of what we’ve owned and moved."
           subtitleWidth={270}
           subtitleWidthMobile={200}
           className={styles.titleContainer}
@@ -100,8 +100,8 @@ export default function HomePage({ articles = [], showcases = [] }) {
 
         <div id="what-we-do" style={{ scrollMarginTop: "20px" }}>
           <MotionTitleBlock
-            title="What we do"
-            subtitle="We take ownership of paid growth, from strategy to execution."
+            title="What we own"
+            subtitle="We don't take a brief and hand back deliverables. We take the seat and own the function."
             className={styles.titleContainer}
             subtitleWidth={260}
             widthMobile={200}
@@ -187,7 +187,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
         <MotionTitleBlock
           width={500}
           title="Journal"
-          subtitle="Thoughts on paid media, growth, and what we’re learning along the way."
+          subtitle="Notes on go-to-market, scaling growth, and what we learn owning the seat inside early-stage startups."
           subtitleWidth={310}
           subtitleWidthMobile={300}
           marginTop={80}
@@ -205,7 +205,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
 
         <MotionTitleBlock
           title="Insights from inside growing startups"
-          subtitle="Notes, experiments, and lessons from teams actually running paid media and growth."
+          subtitle="GTM breakdowns, experiments, and lessons from actually owning growth at this stage."
           width={600}
           subtitleWidth={425}
           subtitleWidthMobile={350}

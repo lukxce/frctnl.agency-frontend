@@ -72,10 +72,10 @@ export default function ContactForm({ onSubmit }) {
       <div className={styles.inner}>
         <header className={styles.header}>
           <h2 id="contact-form-title" className={styles.title}>
-            Tell us a bit about your business.
+            Tell us about your business.
           </h2>
           <p className={styles.subtitle}>
-            If it feels like a good fit, we’ll follow up to explore working
+            If it looks like a fit, we’ll follow up to explore working
             together.
           </p>
         </header>

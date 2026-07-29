@@ -64,20 +64,20 @@ export default function StepProcess() {
 
   const steps = [
     {
-      title: "Discovery & Audit",
-      description: "We understand your business, goals and data",
+      title: "Take the seat & audit",
+      description: "We get inside the numbers and find where growth leaks.",
     },
     {
-      title: "Strategy & Direction",
-      description: "We define focus, priorities, and growth roadmap.",
+      title: "Set strategy & system",
+      description: "We set positioning, priorities, and channel mix, then build the system to run it.",
     },
     {
-      title: "Execution & Optimization",
-      description: "We launch, test, iterate, and scale what actually works.",
+      title: "Own execution & scale",
+      description: "We run it end to end, scaling what compounds and cutting what doesn't.",
     },
     {
-      title: "Reporting & Growth",
-      description: "Clear reporting, insights, and next-step decisions.",
+      title: "Report & decide",
+      description: "We own the number and the next move. No vanity metrics.",
     },
   ];
 
@@ -92,9 +92,11 @@ export default function StepProcess() {
         <div className={styles.mainStepText}>
           <h3 className={styles.mainStepTitle}>How we work</h3>
           <p className={styles.mainStepDescription}>
-            We <span className={styles.mainStepDescriptionBold}>embed</span>{" "}
-            into your business and run paid growth as a single{" "}
-            <span className={styles.mainStepDescriptionBold}>system</span>.
+            We step into the seat and run your go-to-market as one{" "}
+            <span className={styles.mainStepDescriptionBold}>system</span>{" "}
+            we're{" "}
+            <span className={styles.mainStepDescriptionBold}>accountable</span>{" "}
+            for, not a stack of tasks we execute.
           </p>
         </div>
 

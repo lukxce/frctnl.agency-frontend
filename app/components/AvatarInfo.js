@@ -16,7 +16,7 @@ import { defaultSocialLinks } from "./socialIcons";
  */
 export default function AvatarInfo({
   name = "Fractional",
-  role = "Performance marketing for startups",
+  role = "Fractional growth leadership for startups",
   imageSrc = digitlLogo,
   imageAlt = "Fractional logo",
   socialLinks = defaultSocialLinks,

@@ -38,29 +38,29 @@ const faqItemVariants = {
 
 const FAQS = [
   {
-    question: "What kind of brands do you work with?",
+    question: "What kind of startups do you work with?",
     answer:
-      "We work primarily with startups and growth-stage companies that already have traction and want to scale paid acquisition responsibly. We’re selective by design and partner with a limited number of teams at a time.",
+      "Early- and growth-stage teams with traction that need senior growth leadership but aren’t ready to hire a full-time VP. We own a limited number of seats at a time.",
   },
   {
-    question: "Do you only do paid ads?",
+    question: "Are you an agency?",
     answer:
-      "Paid media is the core of what we do, but we don’t treat it in isolation. We also work on conversion design, funnel optimization, and overall acquisition strategy to make sure paid traffic actually converts and compounds.",
+      "No. An agency takes a brief and hands back deliverables. We step into the growth seat, make the calls, and own the outcome, the way a senior in-house leader would.",
+  },
+  {
+    question: "What exactly do you take over?",
+    answer:
+      "The whole go-to-market: positioning, channel strategy, paid, funnel, and roadmap. Paid is where we start, but we own the function, not one channel.",
   },
   {
     question: "How fast can we launch?",
     answer:
-      "Most teams can launch within 2–4 weeks, depending on readiness, assets, and tracking. We move quickly, but we won’t rush fundamentals that affect long-term performance.",
+      "Usually 1 to 2 weeks. We take the seat and audit first, then scale, rather than pouring budget into a broken structure.",
   },
   {
     question: "Is there a contract?",
     answer:
-      "Yes. We typically work on a monthly retainer with a minimum commitment. This allows us to operate like an extended in-house team and focus on meaningful, sustained results.",
-  },
-  {
-    question: "Do you work with everyone?",
-    answer:
-      "No. We intentionally limit the number of partners we work with. If we don’t believe we can create real impact, we’ll say so upfront.",
+      "Monthly partnerships with a short initial commitment. No year-long lock-ins, and if the numbers don’t show a clean path to profit, we’ll tell you upfront.",
   },
 ];
 
