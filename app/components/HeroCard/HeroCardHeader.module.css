@@ -64,17 +64,14 @@
 
 @media (max-width: 640px) {
   .header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column-reverse;
+    gap: 18px;
     margin-top: 26px;
   }
 
   .left {
     flex-direction: row;
-    flex: 1;
-    min-width: 0;
+    width: 100%;
   }
 
   .meta {
