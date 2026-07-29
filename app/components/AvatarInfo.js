@@ -15,10 +15,10 @@ import { defaultSocialLinks } from "./socialIcons";
  * }} props
  */
 export default function AvatarInfo({
-  name = "Fractional",
+  name = "FRCTNL",
   role = "Fractional growth leadership for startups",
   imageSrc = digitlLogo,
-  imageAlt = "Fractional logo",
+  imageAlt = "FRCTNL logo",
   socialLinks = defaultSocialLinks,
   className = "",
 }) {

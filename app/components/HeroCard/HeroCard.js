@@ -36,14 +36,14 @@ import digitlLogo from "../../assets/digitl-logo.png";
 
 /** Full-viewport portfolio hero with floating `stripe.svg` tab and soft card. */
 export default function HeroCard({
-  name = "Fractional",
+  name = "FRCTNL",
   subtitle = "Fractional growth leadership for startups",
   headlineLines = ["We take the growth seat and run your GTM."],
   description = "A senior crew that owns your go-to-market, from strategy to paid to pipeline. Accountable for the number, not just the work.",
   socialProofLabel = "Led by operators who scaled a company to €40M ARR",
   progressActiveCount = 2,
   avatarSrc = digitlLogo,
-  avatarAlt = "Fractional logo",
+  avatarAlt = "FRCTNL logo",
   availabilitySlotsLabel = "2 partner slots",
   availabilityPeriodLabel = "for 2026",
   location = "Belgrade",
