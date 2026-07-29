@@ -66,9 +66,6 @@ export default function HomePage({ articles = [], showcases = [] }) {
         <HeroCard
           primaryCtaHref="/contact"
           secondaryCtaHref="/#how-we-work"
-          headlineLines={[
-            "Paid media for startups that need results, not noise.",
-          ]}
         />
         <ScrollReveal>
           <ClientsLogosCarousel title="Worked with teams at" />
