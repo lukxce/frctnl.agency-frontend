@@ -38,8 +38,8 @@ import digitlLogo from "../../assets/digitl-logo.png";
 export default function HeroCard({
   name = "Fractional",
   subtitle = "Fractional growth leadership for startups",
-  headlineLines = ["We take the growth seat.", "And the number that comes with it."],
-  description = "Not an agency you hand briefs to. Not one freelancer running one channel. A senior crew that steps into the growth leadership seat, owns the whole go-to-market, and is accountable for what it produces.",
+  headlineLines = ["We take the growth seat and run your GTM."],
+  description = "A senior crew that owns your go-to-market, from strategy to paid to pipeline. Accountable for the number, not just the work.",
   socialProofLabel = "Led by operators who scaled a company to €40M ARR",
   progressActiveCount = 2,
   avatarSrc = digitlLogo,
