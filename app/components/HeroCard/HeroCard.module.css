@@ -35,7 +35,6 @@
   padding-bottom: 20px;
   position: relative;
   z-index: 0;
-  border: 1px solid #eaeaea;
 }
 
 .outer {
@@ -52,7 +51,6 @@
 }
 
 .hole {
-  border: 1px solid #eaeaea;
   background-color: #fff;
   width: 63px;
   height: 19px;
@@ -76,7 +74,7 @@
   z-index: 1;
   width: 532px;
   padding: 36px 40px 28px;
-  border-radius: 32px;
+  border-radius: 36px;
   margin: auto;
   background-color: #fff;
 }
