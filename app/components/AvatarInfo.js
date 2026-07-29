@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { canOptimizeImage } from "../../lib/imageHosts.js";
-import digitlLogo from "../assets/digitl-logo.png";
+import frctnlLogo from "../assets/frctnl-logo.svg";
 import styles from "./AvatarInfo.module.css";
 import { defaultSocialLinks } from "./socialIcons";
 
@@ -17,7 +17,7 @@ import { defaultSocialLinks } from "./socialIcons";
 export default function AvatarInfo({
   name = "FRCTNL",
   role = "Fractional growth leadership for startups",
-  imageSrc = digitlLogo,
+  imageSrc = frctnlLogo,
   imageAlt = "FRCTNL logo",
   socialLinks = defaultSocialLinks,
   className = "",

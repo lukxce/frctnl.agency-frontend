@@ -32,7 +32,7 @@ function ViewAllArrowIcon({ className }) {
   );
 }
 
-import digitlLogo from "../../assets/digitl-logo.png";
+import frctnlLogo from "../../assets/frctnl-logo.svg";
 
 /** Full-viewport portfolio hero with floating `stripe.svg` tab and soft card. */
 export default function HeroCard({
@@ -42,7 +42,7 @@ export default function HeroCard({
   description = "A senior crew that owns your go-to-market, from strategy to paid to pipeline. Accountable for the number, not just the work.",
   socialProofLabel = "Led by operators who scaled a company to €40M ARR",
   progressActiveCount = 2,
-  avatarSrc = digitlLogo,
+  avatarSrc = frctnlLogo,
   avatarAlt = "FRCTNL logo",
   availabilitySlotsLabel = "2 partner slots",
   availabilityPeriodLabel = "for 2026",

@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import digitlLogo from "../assets/digitl-logo.png";
+import frctnlLogo from "../assets/frctnl-logo.svg";
 import stripeSvg from "../assets/stripe.svg";
 import styles from "./ClientShowcaseHeader.module.css";
 import CtaButton from "./CtaButton";
@@ -111,7 +111,7 @@ export default function NotFoundShowcaseHeader() {
                 <div className={stylesNotFound.profile}>
                   <div className={stylesNotFound.avatarWrap}>
                     <Image
-                      src={digitlLogo}
+                      src={frctnlLogo}
                       alt=""
                       width={60}
                       height={60}

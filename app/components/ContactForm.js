@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import digitlLogo from "../assets/digitl-logo.png";
+import frctnlLogo from "../assets/frctnl-logo.svg";
 import styles from "./ContactForm.module.css";
 
 export const MESSAGE_MAX_LENGTH = 4000;
@@ -160,7 +160,7 @@ export default function ContactForm({ onSubmit }) {
       <div className={styles.createdBy}>
         <p className={styles.disclaimer}>Created by</p>
         <Image
-          src={digitlLogo}
+          src={frctnlLogo}
           alt="Digitl"
           width={32}
           height={32}
