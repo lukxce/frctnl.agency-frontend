@@ -55,18 +55,22 @@
 
 @media (max-width: 640px) {
   .root {
-    align-items: center;
-    text-align: center;
-    width: 100%;
     flex-direction: row;
-    gap: 5px;
+    align-items: center;
+    gap: 6px;
+    width: auto;
+    align-self: flex-start;
   }
 
   .row {
-    justify-content: center;
+    gap: 6px;
   }
 
   .slots {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .period {
+    font-size: 11px;
   }
 }
