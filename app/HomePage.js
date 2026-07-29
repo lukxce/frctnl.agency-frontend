@@ -213,7 +213,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
           <ClientsLogosCarousel />
         </ScrollReveal> */}
 
-        <ScrollReveal>
+        <ScrollReveal style={{ marginTop: "30px" }}>
           <Subscribe />
         </ScrollReveal>
 
