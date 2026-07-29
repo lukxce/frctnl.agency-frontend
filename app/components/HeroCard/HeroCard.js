@@ -36,7 +36,7 @@ import frctnlLogo from "../../assets/frctnl-logo.svg";
 
 /** Full-viewport portfolio hero with floating `stripe.svg` tab and soft card. */
 export default function HeroCard({
-  name = "FRCTNL",
+  name = "Frctnl",
   subtitle = "Fractional growth leadership for startups",
   headlineLines = ["We take the growth seat and run your GTM."],
   description = "A senior crew that owns your go-to-market, from strategy to paid to pipeline. Accountable for the number, not just the work.",

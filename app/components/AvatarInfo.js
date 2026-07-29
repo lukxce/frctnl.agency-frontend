@@ -15,7 +15,7 @@ import { defaultSocialLinks } from "./socialIcons";
  * }} props
  */
 export default function AvatarInfo({
-  name = "FRCTNL",
+  name = "Frctnl",
   role = "Fractional growth leadership for startups",
   imageSrc = frctnlLogo,
   imageAlt = "FRCTNL logo",
@@ -27,19 +27,20 @@ export default function AvatarInfo({
       className={`${styles.root} ${className}`.trim()}
       aria-label={name ? `${name} profile` : "Profile"}
     >
-      <div className={styles.avatarWrap}>
-        <Image
-          src={imageSrc}
-          alt={imageAlt || name}
-          width={96}
-          height={96}
-          className={styles.avatar}
-          sizes="96px"
-          unoptimized={!canOptimizeImage(imageSrc)}
-        />
+      <div className={styles.nameRow}>
+        <div className={styles.avatarWrap}>
+          <Image
+            src={imageSrc}
+            alt={imageAlt || name}
+            width={96}
+            height={96}
+            className={styles.avatar}
+            sizes="96px"
+            unoptimized={!canOptimizeImage(imageSrc)}
+          />
+        </div>
+        <p className={styles.name}>{name}</p>
       </div>
-
-      <p className={styles.name}>{name}</p>
       <p className={styles.role}>{role}</p>
 
       {socialLinks.length > 0
