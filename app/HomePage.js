@@ -118,7 +118,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
           </div>
         </div>
 
-        <div id="how-we-work" style={{ scrollMarginTop: "20px" }}>
+        <div id="how-we-work" style={{ scrollMarginTop: "20px", width: "100%" }}>
           <ScrollReveal>
             <StepProcess />
           </ScrollReveal>
