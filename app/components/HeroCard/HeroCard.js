@@ -40,7 +40,7 @@ export default function HeroCard({
   subtitle = "Fractional growth leadership for startups",
   headlineLines = ["We take the growth seat and run your GTM."],
   description = "A senior crew that owns your go-to-market, from strategy to paid to pipeline. Accountable for the number, not just the work.",
-  socialProofLabel = "Led by operators who scaled a company to €40M ARR",
+  socialProofLabel = "Led by operators who scaled to €40M ARR",
   progressActiveCount = 2,
   avatarSrc = frctnlLogo,
   avatarAlt = "FRCTNL logo",

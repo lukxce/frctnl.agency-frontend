@@ -1,6 +1,5 @@
 import { tryGetArticlesForHome } from "../../lib/articles";
 import AvatarInfo from "../components/AvatarInfo";
-import ClientsLogosCarousel from "../components/ClientsLogosCarousel";
 import ContactForm from "../components/ContactForm";
 import JournalList from "../components/JournalList";
 import MotionTitleBlock from "../components/MotionTitleBlock";
@@ -48,10 +47,7 @@ export default async function JournalPage() {
         width={600}
         subtitleWidth={425}
       />
-      <ScrollReveal>
-        <ClientsLogosCarousel />
-      </ScrollReveal>
-      <ScrollReveal delay={0.08}>
+      <ScrollReveal style={{ marginTop: "30px" }} delay={0.08}>
         <Subscribe />
       </ScrollReveal>
       <ScrollReveal delay={0.16}>
