@@ -1,4 +1,4 @@
-import { tryGetArticlesForHome } from "../../lib/articles";
+import { tryGetArticlesForHome } from "../../lib/cms.js";
 import AvatarInfo from "../components/AvatarInfo";
 import ContactForm from "../components/ContactForm";
 import JournalList from "../components/JournalList";
