@@ -256,7 +256,9 @@
 
 @media (max-width: 640px) {
   .emailLink {
-    font-size: 34px;
+    font-size: 28px;
+    overflow-wrap: break-word;
+    word-break: break-all;
   }
 
   .createdBy {
@@ -278,11 +280,11 @@
 
   .outer {
     padding-bottom: 20px;
-    height: 760px;
+    min-height: 760px;
   }
 
   .inner {
-    padding: 44px 20px 40px;
+    padding: 44px 20px 30px;
   }
 
   .copyright {
@@ -290,7 +292,7 @@
   }
 
   .footer {
-    padding-top: 0px;
+    padding-top: 8px;
     margin-top: 0px;
   }
 
