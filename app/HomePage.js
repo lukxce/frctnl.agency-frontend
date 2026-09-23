@@ -63,10 +63,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
   return (
     <div className={styles.page}>
       <main className={styles.main} data-article-count={articles.length}>
-        <HeroCard
-          primaryCtaHref="/contact"
-          secondaryCtaHref="/#how-we-work"
-        />
+        <HeroCard primaryCtaHref="/contact" secondaryCtaHref="/#how-we-work" />
         <ScrollReveal>
           <ClientsLogosCarousel title="Worked with teams at" />
         </ScrollReveal>
@@ -118,7 +115,10 @@ export default function HomePage({ articles = [], showcases = [] }) {
           </div>
         </div>
 
-        <div id="how-we-work" style={{ scrollMarginTop: "20px", width: "100%" }}>
+        <div
+          id="how-we-work"
+          style={{ scrollMarginTop: "20px", width: "100%" }}
+        >
           <ScrollReveal>
             <StepProcess />
           </ScrollReveal>

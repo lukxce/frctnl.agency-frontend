@@ -12,7 +12,8 @@ const manrope = Manrope({
 
 const SITE_URL = "https://www.frctnl.agency";
 const SITE_NAME = "Fractional";
-const SITE_TITLE = "Fractional | Senior Growth Leadership That Owns the Outcome";
+const SITE_TITLE =
+  "Fractional | Senior Growth Leadership That Owns the Outcome";
 const SITE_DESCRIPTION =
   "Fractional steps into the growth leadership seat at early-stage startups and owns the whole go-to-market, from strategy to paid to pipeline. Senior operators who scaled a company to €40M ARR, accountable for the number, not just the work.";
 

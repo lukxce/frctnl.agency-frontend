@@ -54,7 +54,11 @@ export default function ContactForm({ onSubmit }) {
       setMessage("");
       setSuccess(true);
       if (typeof onSubmit === "function") {
-        onSubmit({ name: trimmedName, email: trimmedEmail, text: trimmedMessage });
+        onSubmit({
+          name: trimmedName,
+          email: trimmedEmail,
+          text: trimmedMessage,
+        });
       }
     } catch {
       setError("Unable to send your message right now. Please try again.");
@@ -75,8 +79,7 @@ export default function ContactForm({ onSubmit }) {
             Tell us about your business.
           </h2>
           <p className={styles.subtitle}>
-            If it looks like a fit, we’ll follow up to explore working
-            together.
+            If it looks like a fit, we’ll follow up to explore working together.
           </p>
         </header>
 

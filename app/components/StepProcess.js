@@ -69,11 +69,13 @@ export default function StepProcess() {
     },
     {
       title: "Set strategy & system",
-      description: "We set positioning, priorities, and channel mix, then build the system to run it.",
+      description:
+        "We set positioning, priorities, and channel mix, then build the system to run it.",
     },
     {
       title: "Own execution & scale",
-      description: "We run it end to end, scaling what compounds and cutting what doesn't.",
+      description:
+        "We run it end to end, scaling what compounds and cutting what doesn't.",
     },
     {
       title: "Report & decide",
@@ -93,8 +95,7 @@ export default function StepProcess() {
           <h3 className={styles.mainStepTitle}>How we work</h3>
           <p className={styles.mainStepDescription}>
             We step into the seat and run your go-to-market as one{" "}
-            <span className={styles.mainStepDescriptionBold}>system</span>{" "}
-            we're{" "}
+            <span className={styles.mainStepDescriptionBold}>system</span> we're{" "}
             <span className={styles.mainStepDescriptionBold}>accountable</span>{" "}
             for, not a stack of tasks we execute.
           </p>
