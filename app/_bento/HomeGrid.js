@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import prima_dentalLogo from "../assets/clients/prima-dental.webp";
+import thermiqLogo from "../assets/clients/thermiq.webp";
+import startups_rsLogo from "../assets/clients/startups-rs.webp";
 import locationIcon from "../assets/location.svg";
 import stripeSvg from "../assets/stripe.svg";
-import primaDentalLogo from "../assets/primadental logo.webp";
-import startupsLogo from "../assets/startups.rs logo.webp";
-import thermiqLogo from "../assets/thermiq logo.webp";
 import { useEffect, useRef, useState } from "react";
 import {
   IconBrand,
@@ -175,11 +175,10 @@ const OPEN_SLOTS = 2;
 /* Matching the heights made a wide wordmark read three times the size of a
    compact mark — at h=30 these ran 45px to 127px wide. Matching the AREA
    instead is what the eye actually reads as "the same size". */
-const LOGO_AREA = 2744;
 const CLIENT_LOGOS = [
-  { src: primaDentalLogo, alt: "Prima Dental", ratio: 512 / 341 },
-  { src: thermiqLogo, alt: "ThermiQ", ratio: 300 / 160 },
-  { src: startupsLogo, alt: "startups.rs", ratio: 512 / 121 },
+  { src: prima_dentalLogo, alt: "Prima Dental", w: 129, h: 29 },
+  { src: thermiqLogo, alt: "ThermiQ", w: 93, h: 27 },
+  { src: startups_rsLogo, alt: "startups.rs", w: 110, h: 26 },
 ];
 
 const SOCIALS = [
@@ -283,12 +282,9 @@ function ClientsTile() {
         <Image
           src={l.src}
           alt={l.alt}
-          height={Math.round(Math.sqrt(LOGO_AREA / l.ratio))}
-          width={Math.round(Math.sqrt(LOGO_AREA * l.ratio))}
-          style={{
-            height: `${Math.round(Math.sqrt(LOGO_AREA / l.ratio))}px`,
-            width: "auto",
-          }}
+          height={l.h}
+          width={l.w}
+          style={{ height: `${l.h}px`, width: `${l.w}px` }}
           unoptimized
         />
       </span>
@@ -646,7 +642,7 @@ function NewsletterCard() {
         <input
           className={s.subInput}
           type="email"
-          placeholder="vas@email.com"
+          placeholder="you@email.com"
           aria-label="Email address"
           value={email}
           onChange={(e) => {
@@ -720,13 +716,13 @@ function ContactCard({ prefill }) {
       <span className={s.dots} aria-hidden />
       <span className={s.eyebrow}>Your turn</span>
       <p className={s.contactTitle}>
-        {prefill ? "Finish the sentence." : "Where are you now?"}
+        {prefill ? "Finish the sentence." : "Tell us where growth stands."}
       </p>
       <form className={s.contactForm} onSubmit={submit}>
         <input
           className={s.field}
           type="email"
-          placeholder="vas@email.com"
+          placeholder="you@email.com"
           aria-label="Email address"
           value={email}
           onChange={(e) => {
@@ -799,6 +795,12 @@ export default function HomeGrid({
     ? [matched, ...clients.filter((c) => c.slug !== matched.slug)].slice(0, 2)
     : clients.slice(0, 2);
   const q = QUIZ[step];
+
+  function answer(qid, oid) {
+    setAnswers((a) => ({ ...a, [qid]: oid }));
+    // No scroll: the recommendation replaces the quiz inside this same card.
+    if (step < QUIZ.length - 1) setStep(step + 1);
+  }
 
   /* A metric of ours that is a bare number is the only kind worth guessing. */
 
